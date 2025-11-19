@@ -3,6 +3,7 @@ import { Offer, User, UserRole, Conversation, OrderStatus } from './types';
 export const MOCK_USER_AGENT: User = {
   uid: 'user_agent_1',
   role: UserRole.AGENT,
+  roles: [UserRole.AGENT],
   displayName: 'James Bond',
   badges: ['Verified Payer'],
   npn: '1234567890'
@@ -11,6 +12,7 @@ export const MOCK_USER_AGENT: User = {
 export const MOCK_USER_VENDOR: User = {
   uid: 'user_vendor_1',
   role: UserRole.VENDOR,
+  roles: [UserRole.VENDOR],
   displayName: 'Acme Marketing',
   badges: ['Top Rated'],
   businessName: 'Acme Marketing LLC',

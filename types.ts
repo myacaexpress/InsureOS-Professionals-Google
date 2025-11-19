@@ -6,10 +6,12 @@ export enum UserRole {
 
 export interface User {
   uid: string;
-  role: UserRole;
+  role: UserRole; // The currently active role
+  roles: UserRole[]; // All roles the user has signed up for
   displayName: string;
   email?: string;
   phone?: string;
+  businessPhone?: string; // Vendor only (optional secondary contact)
   badges: string[];
   npn?: string; // Agent only
   businessName?: string; // Vendor only
